@@ -1,0 +1,35 @@
+p{
+    font-size: 25px; 
+    color: chocolate;
+}
+h2{
+    color: darkcyan;
+}
+p,h2,h1{
+        background-color: darkgreen;
+}
+#p3{
+    font-size: 50px;
+}
+.p2{
+    width: 50%;
+}
+*{
+    background-color: black;
+    color: white;
+}
+.img0{
+  
+    border-radius: 50%;
+}
+.img1{
+    border-radius: 20%;
+   
+}
+img{
+    height: 300px;
+    display: block;
+}
+dt,dd{
+    display: inline-block;
+}
