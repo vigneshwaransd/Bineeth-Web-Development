@@ -1,0 +1,13 @@
+.s2{
+    background-color: darkviolet;
+    height: fit-content;
+}
+.s3{
+    background: conic-gradient(#f69d3c, #3f87a6);
+    height: 500px;
+
+}
+.s1{
+    background-image: url("BG-1.png");
+    background-size: contain;
+}

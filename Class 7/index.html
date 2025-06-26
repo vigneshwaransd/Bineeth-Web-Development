@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background in CSS</title>
+    <style>
+        h1,dt{
+            background: linear-gradient(to top right, red,blue,green);
+            color: transparent;
+            background-clip: text;
+        }
+        body{
+            background-image: url("https://th.bing.com/th/id/R.955010825ccb94d6c116260e52bce60b?rik=l%2bkK4Qo9ochO1g&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fsamsung-logo-png-samsung-logo-png-2104.png&ehk=Swl%2fTbA1hAPWVAFA7kTpRM0cN5pR2Turbvt1rUQPXos%3d&risl=&pid=ImgRaw&r=0");
+            /* background-size: contain;  */
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: 300px 100px;
+            background-attachment: fixed;
+            z-index: 5;
+        }
+        .box{
+            height: 100px;
+            width: 500px;
+            color: aliceblue;
+            
+        }
+        .b1{
+            background: linear-gradient( to right, red,blue,green);
+        }
+        .b2{
+            background: linear-gradient( to left,red,blue,green);
+        }
+        .b3{
+            background: linear-gradient( to bottom left,red,blue,green);
+        }
+        .b4{
+            background: radial-gradient(circle, red,blue,green);
+        }
+        .b5{
+            background: radial-gradient(circle, red 20%,blue 30%,green 40%);
+
+        }
+        
+        
+        
+        
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Background in CSS</h1>
+        <nav>
+            <dl>
+                <dt>Background</dt>
+                <dd>
+                    <ul>
+                <li><a href="#section1">background-color</a></li>
+                <li><a href="#section1">background-image</a></li>
+                <li><a href="#section1">background-repeat</a></li>
+                <li><a href="#section1">background-attachment</a></li>
+                <li><a href="#section1">background-position</a></li>
+                <li><a href="#section1">background-size</a></li>
+            </ul>
+                </dd>
+                <hr>
+                <dt>Gradient</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#section2">background:linear gradient</a></li>
+                        <li><a href="#section2">background:radial gradient</a></li>
+                        <li><a href="#section3">background:conic gradient</a></li>
+                    </ul>
+                </dd>
+            </dl><hr>
+        </nav>
+    </header>
+    <main>
+        <section style="height: 500px;" class="s1" id="section1">
+            
+        </section>
+
+        <section class="s2" id="section2">
+            <div class="box b1">
+                <h2>Linear gradient to right</h2>
+            </div>
+            <div class="box b2">
+                <h2>Linear gradient to left</h2>
+            </div><div class="box b3">
+                <h2>Linear gradient to left</h2>
+            </div>
+            <div class="box b4">
+                <h2>Radial gradient</h2>
+            </div>
+            <div class="box b5">
+                <h2>Radial gradient</h2>
+            </div><br>
+
+        </section>
+
+        <section class="s3" id="section3">
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
