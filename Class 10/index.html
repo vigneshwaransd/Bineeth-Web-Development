@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1{
+            border: 1px solid red;
+
+        }
+        .p2{
+            border: 1px dotted red;
+        }
+        .p3{
+            border: 2px dashed red;
+        }
+        .p4{
+            border: thick double #32a1ce;
+        }
+        .p5{
+            border: 4mm ridge rgb(211 220 50 / 0.6);
+            display: inline-block;
+        }
+        .bp1{
+            border: 5px ridge blue;
+            padding-top: 50px;
+        }
+        .bp2{
+            border: 5px ridge blue;
+            padding-left: 50px;
+        }
+        .bp4{
+            border: 5px ridge blue;
+            padding: 50px;
+        }
+        .bp3{
+            border: 5px ridge blue;
+            padding: 50px;
+            margin-left: 100px;
+            margin-right: 200px;
+        }
+        .bp5{
+            border: 5px ridge blue;
+            padding: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+        }
+        img{
+            height: 300px;
+            border: 2px ridge brown;
+            padding: 50px;
+            margin-left: 400px;
+            
+           
+        }
+        img:hover{
+            scale: 1.1;
+            transition: 2s;
+            /* filter: contrast(200%); */
+            opacity: 0.1;
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <header>
+        <h1>Box model in CSS</h1>
+        <nav>
+            <ul>
+                <li>Border</li>
+                <li>Padding</li>
+                <li>Margin</li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <p>Normal paragraph</p>
+        <p class="p1">Paragraph with border</p>
+        <p class="p2">Paragraph with Dotted border</p>
+        <p class="p3">Paragraph with Dashed border</p>
+        <p class="p4">Paragraph with Thick double border</p>
+        <p class="p5">Paragraph with rigid border</p>
+        <p class="bp1">Paragraph with border & Padding top</p>
+        <p class="bp4">Paragraph with border & common Padding </p>
+        <p class="bp2">Paragraph with border & Padding left</p>
+        <p class="bp3">Paragraph with border,Padding & Margin left & right</p>
+        <p class="bp5">Paragraph with border,Padding & Margin left auto & right auto</p>
+        
+        <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2023/02/09105704/google-bard-vs-openai-chatgpt-chatbot-which-is-better-artificial-intelligence-AI-1353x900.jpg?tr=w-1366" alt="google">
+
+        <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2023/02/09105704/google-bard-vs-openai-chatgpt-chatbot-which-is-better-artificial-intelligence-AI-1353x900.jpg?tr=w-1366" alt="google">
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+    
+</body>
+</html>

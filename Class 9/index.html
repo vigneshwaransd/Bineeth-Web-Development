@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2:hover{
+            color:red;
+            text-decoration: underline;
+        }
+        .img1:hover{
+            border-radius: 50%;
+            transition: 2s;
+        }
+        .img2:hover{
+            border-radius: 50%;
+            transition: 2s;
+        }
+        img{
+            filter: grayscale(100%);
+            display: block;
+        }
+        img:hover{
+            filter: grayscale(0%);
+            
+        }
+        a:link{
+            color: red;
+
+        }
+        a:visited{
+            color: darkorange;
+        }
+        a:active{
+            color: green;
+
+        }
+        th{
+            text-align: left;
+        }
+        input{
+            font-size: 25px;
+            width: 98%;
+            background-color: transparent;
+        }
+        input:focus{
+            background-color: aquamarine;
+            box-shadow: 2px 2px 2px red;
+        }
+        form{
+            box-shadow: 2px 2px 2px blue;
+            width: 50%;
+
+        }
+        section:first-child{
+            background: linear-gradient(to right,blue,yellow,green);
+        }
+          section:nth-child(2){
+            background: linear-gradient(to right,yellow,orange,green);
+        }
+          section:last-child{
+            background: conic-gradient(blue,yellow,green);
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <header>
+        <h1>Pseudo class in CSS</h1>
+        <hr>
+        <dl>
+            <dt>Key learnings</dt>
+            <dd>
+                <ul>
+                    <li>Hover</li>
+                    <li>Link</li>
+                    <li>Active</li>
+                    <li>Visited</li>
+                    <li>Focus</li>
+                </ul>
+            </dd>
+                
+            
+        </dl>
+    </header>
+
+    <main>
+        <section>
+            <h2>Hover</h2>
+            <img class="img1" src="https://tse2.mm.bing.net/th/id/OIP.zi9fQV4mFU9dhtOKLie6WgHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="google" height="300px" width="300px" ><br><br>
+            <img class="img2" src="https://tse3.mm.bing.net/th/id/OIP.YEe7jjvj3XtaZgPXX7JJ7QHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="flower">
+        </section>
+
+        <section>
+            <h2>Link/Visited/Active</h2>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi6-pn065iOAxVe1DgGHQ7qM1oQjBB6BAgiEAE&url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML&usg=AOvVaw23zU8Os1zIEwrE-SW_k5x4&opi=89978449">HTML</a>
+        
+        </section><br><br>
+
+        <section>
+            <center><form>
+                <table border="2">
+                    <tr>
+                        <th colspan="2">Would you be attending the XYZ event?</th>
+
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <input type="radio" name="Yes" style="width: 10%;">Yes
+                        <input type="radio" name="Yes" style="width: 10%;">No
+                      </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Name</th>
+                    </tr>
+                    <tr>
+                        <td><input type="name" placeholder="First"></td>  
+                        <td><input type="name" placeholder="last"></td>
+        
+
+                    </tr>
+                    <tr>
+                        <th colspan="2">Email</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Phone number</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">How many guests are you bringing</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Register</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center; font-size: 25px;"><button style="background-color: green; color: white; font-weight: bold;">Register</button></td>
+                    </tr>
+                </table>
+            </form>
+            </center>
+        </section>
+
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+    
+</body>
+</html>

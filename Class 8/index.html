@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backround in CSS</title>
+    <style>
+        body{
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg/960px-Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg") ;
+            background-repeat: no-repeat;
+            background-size: 300px 300px;
+            background-position: top right;
+        }
+        .s1{
+            background-image: url("BG-1.png");
+            height:500px;
+            background-size: contain;
+        }
+        .box{
+            height: 500px;
+            
+        }
+        
+        .s2{
+            background-color: aqua;
+            height:fit-content;
+        }
+
+        .b1{
+            background: linear-gradient( to top right, red,blue,green);
+        }
+        
+        .s3{
+            background-color: violet;
+            height: fit-content;
+        }
+        .b2{
+            background: radial-gradient( circle, red ,blue, green);
+        }
+        .s4{
+            background-color: blue;
+            height: fit-content;
+            
+        }
+        .b3{
+            background: conic-gradient(red ,blue, green);
+            
+        }
+        h1{
+            background: linear-gradient( to top right, red, blue, green);
+            color: transparent;
+            background-clip: text;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Background in CSS</h1>
+        <nav>
+           <dl> <dt>Background</dt>
+             <dd>
+               <ul>
+                <li><a href="#sec1">Background-size</a></li>
+                <li><a href="#sec1">Background-position</a></li>
+                <li><a href="#sec1">Background-colour</a></li>
+                <li><a href="#sec1">Background-repeat</a></li>
+                <li><a href="#sec1">Background-attachment</a></li>
+                <li><a href="#sec1">background-image</a></li>
+               </ul>
+             </dd>
+             <dt>Gradient</dt>
+              <dd>
+                <ul>
+                    <li><a href="#sec3">Background:radial gradient</a></li>
+                    <li><a href="#sec3">Background:linear gradient</a></li>
+                    <li><a href="#sec3">Background:conic gradient</a></li>
+                </ul>
+              </dd>
+        </dl>
+    </nav>
+    </header>
+    <hr>
+
+    <main>
+        <section class="s1" id="sec1">
+            
+        </section>
+
+        <section class="s2" id="sec2">
+            <div class="box b1">
+                <h2>Linear Gradient</h2>
+            </div>
+
+        </section>
+
+        <section class="s3" id="sec3">
+            <div class="box b2">
+                <h2>Radial Gradient </h2>
+            </div>
+
+        </section>
+
+        <section class="s4" id="sec3">
+            <div class="box b3" >
+                <h2>Conic Gradient</h2>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
